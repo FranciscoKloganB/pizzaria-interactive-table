@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Screen</title>
+	<base href="..">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<style>
+		body {
+			overflow: hidden;
+		}
+
+		ul {
+			list-style: none;
+			padding:0;
+		}
+		li {
+			display: inline-block;
+			margin: 0 20pt;
+			font-family: "Raleway", Fallback, sans-serif;
+			font-size: 40pt;
+			font-weight: normal;
+			color: white;
+		}
+
+		#logo {
+			background-image: url("img/paradiziaLogo.svg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 50%;
+			height: 50%;
+		}
+
+		#welcomeTitle {
+			margin: 25% auto 0 auto;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="absolute-center" id="logo"></div>
+	<ul class="" id="welcomeTitle">WELCOME, known user</ul>
+
+<!-- SCRIPTS GO UNDER HERE -->
+<script src="scripts/jQuery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+	$("#logo").fadeOut(2500);
+
+	var title = $("#welcomeTitle");
+	var message = title.text();
+	console.log(message);
+	$("#welcomeTitle").empty();
+
+	for (var i = 0; i < message.length; i++) {
+		title.append("<li>" + message[i] + "</li>");
+	}
+
+	var characters = $("li");
+	characters.each(function() {
+		var x = Math.random()*600 - 200;
+		var y = Math.random()*600 - 200;
+		$(this).hide().css({"transform": "translate(" + x + "px," + y + "px)"});
+	});
+	characters.css({"transition":"all 3s ease"});
+	setTimeout(function(){
+		characters.each(function() {
+			$(this).fadeIn(300).css({"transform": "translate(0, 0)"});
+		});
+	}, 2000);
+
+	setTimeout(function() { title.fadeOut(5200); }, 2700);
+	setTimeout(function() { window.location.replace("html/table.html"); }, 5500);
+
+</script>
+</body>
+</html>

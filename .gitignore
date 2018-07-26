@@ -1,0 +1,9 @@
+# System files
+.DS_Store
+*Thumbs.db*
+
+# Work files
+*.pages
+
+# Work directories
+assignments/class4/~$M_Class3_Revised.docx

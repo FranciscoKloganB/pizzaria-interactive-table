@@ -1,0 +1,72 @@
+main { overflow-y: scroll; }
+main label { text-align: left; }
+
+::-webkit-scrollbar { background-color: rgba(255,255,255, 0.2); }
+::-webkit-scrollbar:vertical { width: 0.5%; }
+::-webkit-scrollbar-thumb { background-color: rgba(255,0,0, 0.4); }
+::-webkit-scrollbar-thumb:hover { background-color: white; }
+
+.menuTitle {
+	color: #D32F2F;
+	display: block;
+	font-size: 75px;
+	font-family: bangers, sans-serif;
+	margin-left: 3.7%;
+	text-shadow: 0 0 10px #000;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+
+.menuItems { height: 175%; }
+.menuItems::-webkit-scrollbar { display:none; }
+
+/*			Menu of drinks													*/
+.menuDrinkItem {
+	border-bottom: 1px dashed white;
+	display: inline-block;
+	height: auto;
+	padding: 5% 0;
+}
+.menuDrinkItem:last-child { border: none; }
+.menuDrinkItem.active { background-color: rgba(0,255,0,0.2); }
+.menuDrinkItemImg {
+	display: block;
+	margin: 5% auto;
+	height: 150px;
+	border-radius: 10px;
+}
+
+#extensiveInfoBar .mPITitle {
+	font-family: bangers, sans-serif;
+	font-size: 70px;
+}
+.mPITitle {
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.drinksInformationContainer {
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	margin-top: 5%;
+ 	margin-left: 26%;
+	width: 100%;
+}
+
+.drinksInformationTypeLabel {
+	font-family: raleway, sans-serif;
+	font-size: 30px;
+}
+
+#extensiveInfoBar {
+	position: fixed;
+	width: 40%;
+	right: 0px;
+}
+
+.buttonContainer {
+	position: fixed;
+	top: 80%;
+	right: -2.5%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Pizza Menu</title>
+	<meta charset="utf-8" />
+	<!--Links the css files-->
+	<base href="../..">
+	<link rel="stylesheet" type="text/css" href="css/plugins/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<link rel="stylesheet" type="text/css" href="css/menus/menuCustomizePizza.css">
+</head>
+
+<body>
+	<nav id="menubar"></nav>
+	<nav id="navbar"></nav>
+	<main class="orderMenu" id="customizeYourPizza">
+		<label class="menuTitle">Customize Your Own Pizza</label>
+
+		<section class="customizeStep">
+			<h1>Choose your size</h1>
+			<div class="pizzaCustomizationItemsContainer sizes">
+				<div class="pizzaCustomizationItem col-md-4">
+					<p class="pizzaSizeText">Small</p>
+					<svg class="pizzaSizes" id="small"><use xlink:href="img/menus/customizeMenu/4slicePizza.svg#4slicePizza" /></svg>
+				</div>
+				<div class="pizzaCustomizationItem col-md-4">
+					<p class="pizzaSizeText">Medium</p>
+					<svg class="pizzaSizes" id="medium"><use xlink:href="img/menus/customizeMenu/6slicePizza.svg#6slicePizza" /></svg>
+				</div>
+				<div class="pizzaCustomizationItem col-md-4">
+					<p class="pizzaSizeText">Large</p>
+					<svg class="pizzaSizes" id="large"><use xlink:href="img/menus/customizeMenu/8slicePizza.svg#8slicePizza" /></svg>
+				</div>
+			</div>
+		</section>
+
+		<section class="customizeStep">
+			<h1>Choose your dough</h1>
+			<div class="pizzaCustomizationItemsContainer dough">
+				<div class="pizzaDough col-md-4">
+					<label id="thin">Thin Crust</label><br>
+					<p>Characterized by its buttery, pan-fried taste and outside texture, with a soft and chewey center.</p>
+				</div>
+				<div class="pizzaDough col-md-4">
+					<label id="italian">Italian Original</label><br>
+					<p>Baked in a firewood oven. This dough allows for a faster cooking process while increasing flavors of every single ingredient.</p>
+				</div>
+				<div class="pizzaDough col-md-4">
+					<label id="thick">Thick Crust</label><br>
+					<p>Thick crust capable of handling sauce and toppings in higher quantities.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="customizeStep">
+			<h1>Choose your ingredients</h1>
+			<div class="pizzaCustomizationItemsContainer col-md-6" id="pizzaIngredients">
+				<!--List of ingredients to add (by type)--> <!--All spawned using JS--->
+			</div>
+
+			<div class="col-md-6" id="confirmationArea">
+				<label id="customPizza">Your pizza contains:</label>
+				<ul id="ingredientsPicked"></ul>
+				<div class="buttonContainer" id="customizeButtons">
+					<button id="confirm">CONFIRM</button>
+					<button id="back">BACK</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<!-- SCRIPTS GO UNDER HERE -->
+<script src="scripts/jQuery/jquery-3.1.1.min.js"></script>
+<script src="scripts/jQuery/jquery.navbar.js"></script>
+<script src="scripts/plugins/svg4everybody.min.js"></script>
+<script src="scripts/menus/menuStructs.js"></script>
+<script src="scripts/menus/menuGenerator.js"></script>
+<script src="scripts/menus/orderManager.js"></script>
+<script src="scripts/menus/menuCustomizePizza.js"></script>
+<script src="scripts/global.js">/* For some reason, this script breaks toLowerCase(), so it must be moved down */</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.orderStatusContainer {
+	background-color: rgba(0,0,0,0.6);
+	border-bottom: 1px dashed white;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.orderStatusContainer:last-child {
+	border: none;
+}
+
+.orderStatusContainer > * {
+	color: #ECF0F1;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	text-align: center;
+}
+
+#orders {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 68vh;
+}
+
+#orderStatusText {
+	color: #D32F2F;
+	font-size: 75px;
+	font-family: bangers, sans-serif;
+	margin-left: 3.5%;
+	text-shadow: 0 0 10px #000;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+
+#timer {
+	padding-top: 2%;
+	padding-right: 2%;
+}
+
+.mPITitle {
+	display: block;
+	font-size: 40px;
+	font-family: raleway, sans-serif;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+
+.menuPizzaItem {
+	padding: 4vh 0 0 2vh;
+}
+.pizzaThumbnail {
+	float: left;
+	width: 35%;
+	height: auto;
+}
+
+.menuPizzaItemInfo {
+	float: left;
+	margin-left: 20px;
+	text-align: left;
+	width: calc(65% - 25px);
+}
+.menuPizzaItemInfo label{
+	text-align: left;
+}
+.mPIIIngredient {
+	display: block;
+	font-size: 15px;
+	font-family: raleway, sans-serif;
+	margin: 0;
+	text-align: left;
+}
+
+.menuDrinkItem {
+	padding: 4vh 0 0;
+}
+.menuDrinkItemImg {
+	display: inline-block;
+	margin: 0 auto 0 auto;
+	width: auto;
+	height: 200px;
+}
+
+.menuPizzaItem {
+	border: none;
+}
+
+.incButtons {
+	margin: 65px 0;
+}
+.buttons {
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+}
+.buttons > button:not(button#editPizza, button#editDrink) {
+	display: block;
+	padding: 4% 6%;
+	margin: 2% auto;
+	width: 100%;
+}
+
+button#reorder {
+	display: none;
+	font-size: 30px;
+}
+button#editPizza, button#editDrink {
+	display: none;
+	margin: 0% 4%;
+	padding: 2% 5%;
+	width: 42%;
+}
+
+#buttonNewOrder, #buttonCancelAll {
+	padding: 2.25% 4%;
+}
+
+.timer_order > canvas { margin: 8vh; }

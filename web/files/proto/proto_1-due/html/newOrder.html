@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Paradizia</title>
+	<meta charset="utf-8" />
+	<!--Links the css files-->
+	<base href="..">
+	<link rel="stylesheet" type="text/css" href="css/plugins/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/confirmationOverlay.css">
+	<link rel="stylesheet" type="text/css" href="css/menus/menuPizzaList.css">
+	<link rel="stylesheet" type="text/css" href="css/newOrder.css">
+</head>
+<body>
+	<nav id="menubar"></nav><!--Adds the system-global vertical lateral menu bar-->
+	<nav id="navbar"></nav>
+	<main>
+		<label id="orderStatusText">Order Status</label>
+		<div id="orders"></div>
+		<div class="buttonContainer col-md-12">
+			<button type="button" id="buttonNewOrder">New Order</button>
+			<button type="button" id="buttonCancelAll">Cancel All</button>
+		</div>
+	</main>
+<!-- SCRIPTS GO UNDER HERE -->
+<script src="scripts/jQuery/jquery-3.1.1.min.js"></script>
+<script src="scripts/jQuery/jquery.navbar.js"></script>
+<script src="scripts/plugins/svg4everybody.min.js"></script>
+<script src="scripts/confirmationOverlay.js"></script>
+<script src="scripts/menus/menuStructs.js"></script>
+<script src="scripts/menus/menuGenerator.js"></script>
+<script src="scripts/menus/orderManager.js"></script>
+<script src="scripts/newOrder.js"></script>
+</body>
+</html>

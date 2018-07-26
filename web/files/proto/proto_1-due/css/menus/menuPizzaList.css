@@ -1,0 +1,84 @@
+main label {
+	font-family: bangers, Fallback, sans-serif;
+	font-size: 60px;
+	text-align: center
+}
+
+/* Premade pizza sugestions */
+#menuPremadePizzasSugestions {
+	display: inline-block;
+	overflow-x: scroll;
+	overflow-y: visible;
+	white-space: nowrap;
+	width: 100%;
+}
+.menuPizzaSugestion {
+	display: inline-table;
+	margin:0 15pt;
+}
+
+/* Menu of premade pizzas */
+.menuPizzaItem {
+	border-bottom: 1px dashed white;
+	display: block;
+	margin: 0;
+	padding: 4vh 0;
+	vertical-align: middle;
+
+	width: 100%;
+	height:auto;
+}
+.menuPizzaItem:last-child { border: none; }
+.pizzaThumbnail {
+	float: left;
+	padding: 0;
+
+	height: auto;
+}
+.menuSugestedPizzaImg {
+	float: left;
+	width: 20%;
+	height: auto;
+}
+.menuPizzaItemInfo {
+	color: white;
+	text-align: center;
+}
+.mPIIIngredientList {
+	margin: 0;
+	padding: 0;
+}
+.mPIIIngredient {
+	display: block;
+	font-family: raleway, Fallback, sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+.mPIISizeButton {
+	background-color: rgba(0,0,0,0.6);
+	border: none;
+	color: white;
+	font-size: 20px;
+	margin: 10px 10px;
+	padding: 15px 20px;
+}
+
+/* Create Your Own Pizza Shortcut */
+#createPizzaShortcut {
+	position: absolute;
+
+	transform: translateY(-50%);
+	top: 50%;
+	right: 0;
+}
+.buttonContainer #cancelButton {
+	background-color: #D50000;
+	border-color: #D50012;
+}
+.buttonContainer #skipButton {
+	background-color: green;
+	border-color: green;
+}
+.buttonContainer #pizzaOrder {
+	font-size: 20px;
+}

@@ -1,0 +1,138 @@
+/* Shared elements */
+#menubar, #navbar {
+	position: absolute;
+}
+
+/********************** Left-side menu bar **********************/
+#menubar {
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 100vh;
+	z-index: 101;
+}
+
+#menubar div {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#menubar #logo {
+	background-image: url("../img/paradiziaLogo.svg");
+	background-size: contain;
+	min-width:  1%;
+	min-height: 1%;
+	width: 100%;
+	height: 30%;
+}
+
+#menubar #options {
+	float: left;
+	padding: 5pt;
+	height: 100%;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#menubar #options::-webkit-scrollbar {
+	display: none;
+}
+#menubar .button {
+	border-bottom: 1px dashed white;
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+#menubar .button:last-child { border-bottom: none; }
+#menubar .button:hover svg { fill: white; }
+
+#menubar .title {
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+	margin: 10px;
+}
+
+#menubar .icon {
+	width: 48px;
+	height: 48px;
+	margin: 5px 10px;
+}
+#menubar .icon {
+	float: left;
+	fill: #C8190E;
+}
+
+#menubar #minimizer {
+	fill: white;
+	float:left;
+	width: 40pt;
+	height: 100%;
+}
+#menubar #minimizer.closed {
+	transform: scaleX(-1);
+}
+#menubar #minimizer svg {
+	position: relative;
+	width: 48px;
+	top: 50%;
+}
+
+#menubar #shortcuts {
+	font-size: 24px;
+}
+
+#menubar #taxiNavBarDiv {
+	margin-top:50px;
+}
+
+/********************** Top navigation bar **********************/
+#navbar {
+	background-color: rgba(0, 0, 0, 1);
+	float:left;
+
+	width: 100vw;
+	height: 5vh;
+	z-index: 100;
+}
+
+#navbar a {
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.multi-steps {
+	background-color: transparent;
+	list-style: none;
+	line-height: 5vh;
+	margin: 0;
+	padding: 0 10%;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	height: 100%;
+}
+
+.multi-steps li {
+	color: white;
+	font-size: 3vh;
+	text-align: center;
+}
+
+.multi-steps li a {
+	color: white;
+}
+.multi-steps li.current a {
+	color: #D32F2F;
+}
+.multi-steps li.visited a {
+	color: grey;
+}
+
+.multi-steps li::after {
+	background-color: #96c03d; /* FIXME: change to our color pallette */
+	bottom: 4px;
+	left: 50%;
+	width: calc(100% + 40px); /* FIXME: swap 40px to amount of right margin for <li> */
+}
+
+.multi-steps li.visited::after {
+	background-color: #96c03d; /* FIXME: change to our color pallette */
+}

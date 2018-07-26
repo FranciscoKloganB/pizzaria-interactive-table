@@ -1,0 +1,146 @@
+/* Palette: black, #333, darkorange, lightgrey & white */
+
+/******* Adding local Fonts *******/
+/* Adding Bangers font */
+@font-face {
+	font-family: "Bangers";
+	src: url("../fonts/Bangers/Bangers-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Adding Kanit font */
+@font-face {
+	font-family: "Kanit";
+	src: url("../fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Adding Raleway font */
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: lighter;
+}
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-LightItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-ExtraBoldItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bolder;
+}
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway/Raleway-BlackItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: bolder;
+}
+
+/* Main types */
+* {
+	cursor: default;
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	background-color: black;
+	font-family: "Raleway", Fallback, sans-serif;
+	margin: 0;
+}
+
+h1 { font-size: 36pt; }
+h2 { font-size: 30pt; }
+h3 { font-size: 24pt; }
+
+/********** Helper classes ***********/
+.wrapper {
+	align-items: center;
+	justify-content: center;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.absolute-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Loading spinner */
+.loader,
+.loader:after {
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+}
+.loader {
+	margin: 60px auto;
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-left: 1.1em solid #ffffff;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

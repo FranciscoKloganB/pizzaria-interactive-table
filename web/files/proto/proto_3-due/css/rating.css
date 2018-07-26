@@ -1,0 +1,23 @@
+#orderStatusText {
+	color: #D32F2F;
+	font-size: 75px;
+	font-family: bangers, sans-serif;
+	margin-left: 3.5%;
+	text-shadow: 0 0 10px #000;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+
+#buttonCancel, #buttonConfirm {
+	padding: 2.25% 4%;
+}
+
+#starContainer {
+	margin: 8% auto;
+	font-size: 150px;
+	text-align: center;
+}
+
+.fa.fa-star {
+	margin: 2%;
+}

@@ -1,0 +1,103 @@
+main label {
+	font-family: bangers, Fallback, sans-serif;
+	font-size: 60px;
+	text-align: center
+}
+
+#customizationShortcut, .menuStep {
+	color: #D32F2F;
+	font-size: 75px;
+	font-family: bangers, sans-serif;
+	margin-left: 3.7%;
+	text-shadow: 0 0 10px #000;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+
+#extensiveInfoBar .mPITitle {
+	font-family: bangers, sans-serif;
+	font-size: 70px;
+}
+.mPITitle { font-size: 35px; }
+
+/* Premade pizza sugestions */
+#menuPremadePizzasSugestions {
+	display: inline-block;
+	overflow-x: scroll;
+	overflow-y: visible;
+	padding: 5% 0;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.menuPizzaSuggestion {
+	display: inline-table;
+	margin:0 15pt;
+}
+
+/* Menu of premade pizzas */
+.menuPizzaItem {
+	border-bottom: 1px dashed white;
+	display: block;
+	margin: 0;
+	padding: 4vh 0;
+	vertical-align: middle;
+	width: 100%;
+	height:auto;
+}
+.menuPizzaItem:last-child { border: none; }
+.pizzaThumbnail {
+	float: left;
+	padding: 0;
+	height: auto;
+}
+.menuSugestedPizzaImg {
+	float: left;
+	width: 20%;
+	height: auto;
+}
+
+#menuPremadePizzasSugestions .menuPizzaItemInfo { margin-right: 20px; }
+#menuPremadePizzasSugestions .mPITitle { font-size: 50px; }
+
+#premade .menuPizzaItemInfo { margin-top: 3%; }
+#premade .mPITitle {
+	font-family: bangers, sans-serif;
+	font-size: 65px;
+	margin-bottom: 7%;
+}
+#premade .mPIIIngredient {
+	font-size: 35px;
+	font-family: raleway, sans-serif;
+}
+
+.suggestedToolTip {
+	font-size: 15px;
+	font-family: raleway, sans-serif;
+	margin-left: 20px;
+}
+
+.menuPizzaItemInfo {
+	color: white;
+	text-align: center;
+}
+.mPIIIngredientList {
+	margin: 0;
+	padding: 0;
+}
+.mPIIIngredient {
+	display: block;
+	font-family: raleway, Fallback, sans-serif;
+	font-size: 22px;
+	margin: 0;
+}
+.mPIISizeButton {
+	padding: 4% 6%;
+}
+
+#createPizzaShortcut {
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: 0;
+}

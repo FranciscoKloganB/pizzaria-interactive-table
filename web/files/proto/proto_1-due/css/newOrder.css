@@ -1,0 +1,141 @@
+.orderStatusContainer {
+	background-color: rgba(0,0,0,0.6);
+	border-bottom: 1px dashed white;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 34vh;
+}
+
+.orderStatusContainer:last-child {
+	border: none;
+}
+
+#orders {
+	overflow-y: scroll;
+	height: 72vh;
+}
+
+#orderStatusText {
+	font-family: 'Bangers', cursive;
+	font-size: 50px;
+	color: #ecf0f1;
+	margin: 0 0 0 9vh;
+}
+
+#timer {
+	padding-top: 2%;
+	padding-right: 2%;
+}
+
+.col {
+	color: #ECF0F1;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	text-align: center;
+}
+
+.buttons {
+	padding: 4vh 0 0 0;
+}
+
+.editcancel {
+	background-color: #ECF0F1;
+	border-color: #FFFFFF;
+	box-shadow: 0px 5px 10px black;
+	border-radius: 20px;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	margin: 2% auto;
+	padding: 4% 6%;
+	text-align: center;
+	width: 300px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+
+}
+.buttonEditPizza, .buttonEditDrink {
+	background-color: #ECF0F1;
+	border-color: #FFFFFF;
+	border-radius: 12px;
+	color: white;
+	display: none;
+	margin: 0% 5%;
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	padding: 2% 5%;
+	text-align: center;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+#buttonNewOrder {
+	background-color: #6B9C15;
+	border-color: #2E7D32;
+	font-size: 25px;
+	padding: 1% 3%;
+}
+
+#buttonCancelAll {
+	background-color: #D50000;
+	border-color: #D32F2F;
+	font-size: 25px;
+	padding: 1% 3%;
+}
+
+.mPITitle {
+	display: block;
+	font-size: 40px;
+	font-family: raleway, sans-serif;
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+
+.menuPizzaItem {
+	padding: 4vh 0 0 2vh;
+	width: 650px;
+	height: auto;
+}
+.menuPizzaItemInfo {
+	float: left;
+	margin-left: 20px;
+	text-align: left;
+	width: 400px;
+}
+.menuPizzaItemInfo label{
+	text-align: left;
+}
+.mPIIIngredient {
+	display: block;
+	font-size: 15px;
+	font-family: raleway, sans-serif;
+	margin: 0;
+	text-align: left;
+}
+
+.menuDrinkItem {
+	padding: 4vh 0 0 0;
+	margin-right: 200px;
+	width: 400px;
+	height: auto;
+}
+.pizzaThumbnail {
+	float: left;
+	width: auto;
+	height: 200px;
+}
+.menuDrinkItemImg {
+	display: inline-block;
+	margin: 0 auto o auto;
+	width: auto;
+	height: 200px;
+}
+
+.buttonCancel {
+	background-color: #D50000;
+	border-color: #D50012;
+	border-radius: 20px;
+}

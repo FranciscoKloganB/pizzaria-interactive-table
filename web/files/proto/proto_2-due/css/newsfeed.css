@@ -1,0 +1,55 @@
+body {
+	overflow: hidden;
+}
+
+.logoIcon {
+	border-radius: 7px;
+	right: 10;
+	bottom: 10;
+	position: absolute;
+	width: auto;
+	height:50px;
+}
+
+.viewport {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+
+	width: 100%;
+	height: 100%;
+}
+
+.overview {
+	list-style: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+.overview li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: 50%;
+	float: left;
+
+	width: 100vw;
+	height: 100vh;
+}
+.overview li a {
+	display: block;
+	text-decoration: none;
+	width:100%;
+	height:100%;
+}
+
+.newsTitle {
+	color: white;
+	font-size: 20pt;
+	font-weight: bolder;
+	text-align: center;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 1px;
+
+	margin: 5pt 0;
+}

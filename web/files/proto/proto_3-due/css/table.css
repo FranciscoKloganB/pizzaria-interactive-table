@@ -1,0 +1,202 @@
+/*-------------------------------------------------------------------------
+
+			Global page
+
+--------------------------------------------------------------------------*/
+
+html, body {
+	overflow: hidden;
+	background-image: url("../img/tableBackgrounds/tableBack1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+main {
+	position: relative;
+	margin-top: 5vh; /* Size of (possible) top navbar */
+	margin-left: 40pt; /* Size of left-side menubar */
+	height: 100%;
+}
+main ::-webkit-scrollbar {
+	background-color: rgba(255,255,255, 0.2);
+	width: 10px;
+	height:10px;
+}
+main ::-webkit-scrollbar-track-piece { background-color: rgba(255,255,255,0.1); }
+main ::-webkit-scrollbar-thumb { background-color: rgba(255,0,0, 0.4); }
+main ::-webkit-scrollbar-thumb:hover { background-color: white; }
+main label {
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 10px #000;
+}
+p { color: white; }
+
+button:focus { outline: 0; }
+
+/*-------------------------------------------------------------------------
+
+			Menu bar taxi
+
+--------------------------------------------------------------------------*/
+#taxiNavBarDiv { text-align: center; }
+#taxiNavBarIcon { font-size: 40px; }
+#MBtaxiNumberLabel {
+	color: white;
+	font-size: 18px;
+	font-family: bangers, sans-serif;
+}
+.taxiETALabel {
+	margin-left: 30px;
+	color: white;
+	font-family: bangers, sans-serif;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+#taxiCancelButton {
+	display: block;
+	margin: 15px auto;
+	padding: 20px;
+}
+
+/*-------------------------------------------------------------------------
+
+			Menu Pizza Items
+
+--------------------------------------------------------------------------*/
+.mPITitle {
+	font-size: 40px;
+	font-family: "Raleway", Fallback, sans-serif;
+	margin: 0 0 10px 0;
+}
+.menuItems {
+	float: left;
+	position: relative;
+	overflow-x: hidden;
+	height: 100%;
+}
+.menuItems section { margin: 10px 0; }
+
+/*-------------------------------------------------------------------------
+
+			Buttons
+
+--------------------------------------------------------------------------*/
+.buttonContainer { text-align: center; }
+.buttonContainer button {
+	font-size: 40px;
+	padding: 4% 6%;
+	text-align: center;
+}
+.buttonContainer button:not(:last-child) { margin-right: 5%; }
+.buttonDanger, .buttonNeutral, .buttonReward, .buttonWhite {
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px black;
+	color: white;
+	font-family: bangers, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+.buttonDanger { background-color: #D50000; }
+.buttonNeutral { background-color: grey; }
+.buttonReward { background-color: #2ecc31; }
+.buttonWhite { background-color: white; color: black;}
+#pizzaOrderButton {
+	margin-top: 5%;
+	padding: 5% 6%;
+	width: 300px;
+}
+#drinkOrderButton {
+	margin-top: 5%;
+	padding: 5% 6%;
+	width: 300px;
+}
+.incrementButton {
+	font-size: 35px;
+	padding: 10px 20px;
+	width: 100px;
+}
+.elementNumber {
+	color: white;
+	font-size: 35px;
+	width: 50px;
+}
+
+/*-------------------------------------------------------------------------
+
+			Extensive Information Bar
+
+--------------------------------------------------------------------------*/
+#extensiveInfoBar {
+	background-color: rgba(0, 0, 0, 0.95);
+	color: white;
+	float: right;
+	margin-right: 5%;
+	position: fixed;
+	height: 100%;
+	right: 0;
+	z-index: 5;
+}
+#extensiveInfoBar td {
+	color: white;
+	padding: 0 10px 15px 10px;
+}
+
+#extensiveInfoBar .fa.fa-close {
+	float: right;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+/* This is the ID, the whole thing*/
+#infoContents {
+	text-align: center;
+	height: 100%;
+}
+#infoContents label { width: 100%; }
+/* This is the Class, its elements */
+.infoContent {
+	margin-top: 5%;
+}
+
+#extensiveInfoBar .mPIIIngredient {
+	display: block;
+	font-size: 20px;
+	width: 100%;
+}
+.nutritionalTable {
+	font-family: raleway, sans-serif;
+	font-size: 25px;
+	margin-left: 25%;
+	width: 45%;
+}
+.priceContainer { font-family: raleway, sans-serif; }
+.priceContainer label {
+	color: green;
+	font-size: 50px;
+	font-family: "Bangers", Fallback, sans-serif;
+	text-align: center;
+}
+.rating {
+	font-size: 50px;
+	text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------
+
+			Font Awesome Icons
+
+--------------------------------------------------------------------------*/
+.fa { color: white; }
+#customPizza { margin-top: 5%; }
+.fa.fa-user {
+	color: darkred;
+	font-size: 50px;
+	font-weight: bolder;
+	margin-top: 10%;
+}
+.fa.fa-star {  }
+.coloredStar { color: green; }

@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title>Newsfeed</title>
+	<meta charset="utf-8" />
+	<!--Links the css files-->
+	<base href="..">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/newsfeed.css">
+</head>
+
+<body>
+	<div class="viewport"><div class="loader"></div></div>
+
+<!-- SCRIPTS GO UNDER HERE -->
+<script src="scripts/jQuery/jquery-3.1.1.min.js"></script>
+<script src="scripts/jQuery/jquery.tinycarousel.js"></script>
+<script src="scripts/jQuery/jquery.afeeder.js"></script>
+<script>
+	$(document).ready(function() {
+		// Activate live feed
+		$(".viewport").aFeeder({
+			key : "vrbfbxr98hh5uzoiooefwgcs7rscmo9sbhgzeyvw", // Keyaku's API key
+			feedURL     : "http://feeds.bbci.co.uk/news/rss.xml",
+			maxCount    : 10,
+			showDesc    : false,
+			onComplete  : function() {
+				// Remove loader div
+				$(".loader").remove();
+				// Apply TinyCarousel effect on the feed
+				$("body").tinycarousel({
+					buttons: false,
+					interval: true,
+					intervalTime: 4000,
+					animation: true,
+					animationTime: 1000,
+				});
+			}
+		});
+	});
+</script>
+</body>
+</html>

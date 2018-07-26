@@ -1,0 +1,110 @@
+main { overflow-y: scroll; }
+main label { text-align: left; }
+
+::-webkit-scrollbar {
+  background-color: rgba(46, 125, 50, 0.2);
+	border-radius: 20px;
+}
+::-webkit-scrollbar:vertical { width: 0.5%; }
+::-webkit-scrollbar-thumb {
+	background-color: rgba(107, 155, 55, 0.4);
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover { background-color: white; }
+
+
+
+
+.menuItems { height: 175%; }
+.menuItems::-webkit-scrollbar { display:none; }
+
+/*			Menu of drinks													*/
+.menuDrinkItem {
+	border-bottom: 1px dashed white;
+	display: inline-block;
+	width: 33%;
+	height: auto;
+}
+.menuDrinkItem:last-child { border: none; }
+.menuDrinkItemImg {
+	display: block;
+	margin: 5% auto;
+	height: 150px;
+	border: 5px solid white;
+	border-radius: 10px;
+}
+.menuDrinkItemImg.active { border: 5px solid #2E7D32; }
+
+.mPITitle {
+	font-size: 20px;
+	font-family: "Raleway", Fallback, sans-serif;
+	margin-top: 10%;
+	text-align: center;
+	width: 100%;
+}
+.mPITitle.active { color: #2E7D32; }
+
+#extensiveInfoBar .mPITitle  { font-size: 50px; }
+
+.nutritionalTable {
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	margin-top: 7.5%;
+	margin-left: 30%;
+	width: 45%;
+}
+
+.drinksInformationContainer {
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	margin-top: 7.5%;
+	margin-left: 10%;
+	text-align: left;
+	width: 100%;
+}
+
+#infoContents label { font-size: 30px; }
+
+.priceContainer {
+	font-family: raleway, sans-serif;
+	font-size: 20px;
+	margin-top: 10%;
+	margin-left: 10%;
+	text-align: left;
+	width: 100%;
+}
+
+#extensiveInfoBar {
+	position: fixed;
+	width: 40%;
+	right: 0px;
+}
+
+#drinkOrderButton {
+	background-color: #2ecc31;
+	border-color: #27ae60;
+	border-radius: 20px;
+	color: white;
+	font-family: raleway, sans-serif;
+	font-size: 30px;
+	margin-top: 10%;
+	margin-left: 60%;
+	text-align: center;
+	width: 200px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+
+.buttonContainer {
+	position: fixed;
+	top: 80%;
+	right: -2.5%;
+}
+.buttonContainer button#cancelButton {
+	background-color: #D50000;
+	border-color: #D50012;
+}
+.buttonContainer button#skipButton {
+	background-color: green;
+	border-color: green;
+}

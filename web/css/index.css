@@ -1,0 +1,114 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: "Kanit", Fallback, sans-serif;
+}
+
+/* Header */
+header {
+	background-color: black;
+	text-align: center;
+    height: 100vh;
+}
+.titleSubtitle {
+	color: lightgrey;
+	display: none;
+}
+.titleSubtitle h1 {
+	font-size: 75pt;
+}
+.titleSubtitle p {
+	font-size: 14pt;
+}
+
+/* Rest of page */
+main {
+	background-color: #333;
+	color:white;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+section {
+	margin-top: 30pt;
+	margin-bottom: 30pt;
+}
+section:first-of-type {
+	margin-top: 0;
+}
+
+a {
+	cursor: initial;
+}
+
+#logoIST {
+	background-image: url("../img/about/logoIST.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin:10pt;
+
+	position: fixed;
+	top:0;
+	left:0;
+	width: 25vw;
+	height: 12vh;
+}
+
+.studentName {
+	font-size: 16pt;
+}
+.studentId {
+	font-size: 18pt;
+}
+.studentPic {
+	background-color: lightgrey;
+	border-radius: 30px;
+	width: 120pt;
+
+	transition: 0.2s;
+	box-shadow: 0 0 5pt 5pt rgba(255, 255, 255, 0);
+}
+.studentPic:hover {
+	box-shadow: 0 0 5pt 5pt rgba(255, 255, 255, 0.5);
+}
+
+.team {
+	color: white;
+	margin-top:10pt;
+	margin-bottom:10pt;
+}
+.team tr {
+	line-height: 22pt;
+}
+.team td {
+	text-align: center;
+}
+
+.links {
+	color: white;
+	margin: 50pt inherit;
+}
+.links h2 {
+	color: darkorange;
+}
+.links h3 {
+	font-weight: bolder;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+}
+.links a {
+	display: inline-block;
+	font-size: 11pt;
+	margin: 5pt;
+	text-decoration: none;
+}
+.links a:hover {
+	color: darkorange;
+}
+.links p {
+	font-size: 13pt;
+}

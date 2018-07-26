@@ -1,0 +1,104 @@
+main { overflow-y: scroll; }
+body { background-image: url("../../img/tableBackgrounds/tableBack4.jpg"); }
+
+.menuTitle {
+	color: #D32F2F;
+	font-size: 100px;
+	font-family: bangers, sans-serif;
+	margin-left: 3.7%;
+	text-shadow: 0 0 10px #000;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+.customizeStep { text-shadow: 0 0 10px #000; }
+.customizeStep h1 {
+	font-family: bangers, sans-serif;
+	color: white;
+	font-size: 60px;
+	margin-left: 3.7%;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+}
+
+
+#customizeStepSize { height: 280px; }
+.mPIISizeButton {
+	width: 60%;
+	height: 150px;
+}
+
+#customizeStepDough { height: 400px; }
+.pizzaDough {
+	padding: 0 3%;
+	text-align: center;
+}
+.mPIIDoughButton {
+	padding: 10%;
+	width: 70%;
+	height: 150px;
+}
+.pizzaDough p {
+	font-size: 18px;
+	margin: 0 auto;
+	margin-top: 5%;
+	text-align: justify;
+	width: 70%;
+}
+
+
+#pizzaIngredients {
+	font-family: 'Raleway', sans-serif;
+	padding: 0 7% 2% 7%;
+}
+.pizzaIngredientTypeLabel { font-size: 35px; }
+.pizzaIngredientType {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 5%;
+	padding: 2%;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.pizzaIngredient {
+	display: inline-block;
+	padding: 1% 5% 1% 0;
+}
+.ingredientImgButton {
+	background-size: 120px 80px;
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	width: 120px;
+	height: 80px;
+}
+.ingredientNameButton {
+	border-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	float: right;
+	min-width: 100px;
+	height: 80px;
+}
+
+#confirmationArea label {
+	font-size: 35px;
+	font-weight: lighter;
+}
+#confirmationArea label b { color: #D32F2F; }
+#confirmationArea label i { color: green; }
+#ingredientsPicked {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 20px;
+	list-style: none;
+	padding: 3% 5%;
+	overflow-y: auto;
+	max-height: 50%;
+}
+#ingredientsPicked .fa {
+	margin-right: 2%;
+}
+.buttonContainer#customizeButtons { width: 100%; }
+.buttonContainer#customizeButtons button {
+	padding: 4% 6%;
+	margin-top: 5%;
+}

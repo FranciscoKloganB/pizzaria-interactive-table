@@ -1,0 +1,106 @@
+main {
+	position: relative;
+	margin-top: 0;
+	height: 100%;
+}
+
+#barIcon { background-image: url("../img/icons/bar.svg"); }
+#mallIcon { background-image: url("../img/icons/mall.svg"); }
+#movietheaterIcon { background-image: url("../img/icons/movietheater.svg"); }
+#taxiIcon { background-image: url("../img/icons/taxi.svg"); }
+#UberIcon { background-image: url("../img/icons/uber.svg"); }
+#publicTransportIcon { background-image: url("../img/icons/publictransport.svg"); }
+
+#iframeMap {
+	border: 0;
+	box-shadow: 0 10px 10px 0 black;
+	margin: 1% 2.5%;
+	width: 95%;
+	height: 70%;
+}
+
+#mapsMainButtonContainer { margin: 0 2.5%; }
+#mapsMainButtonContainer > section { margin: 1% auto; }
+#mapsMainButtonContainer > section:nth-child(1) button {
+	margin: 0;
+	min-width: 200px;
+	padding: 20px 30px;
+}
+#mapsMainButtonContainer > section:nth-child(2) button {
+	min-width: 100px;
+	padding: 10px;
+}
+#shareConfirm {
+	padding: 10px 50px;
+	margin-left: 50px;
+}
+
+#directionsButtonContainer div.col-md-6 { padding: 0; }
+#go {
+	border: none;
+	border-radius: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: none;
+	float: right;
+	margin: 0;
+}
+#mapsMainButtonContainer > section:nth-child(2) #go { padding: 9px 30px; } /*Needs to be like this*/
+#mapsDestinationInput {
+	border: none;
+	border-radius: 0;
+	font-size: 20px;
+	float: right;
+	margin: 0;
+	padding: 16px;
+}
+#mapsDestinationInput:focus { outline-width: 0; }
+#mic {
+	background-color: white;
+	border: none;
+	border-radius: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: black;
+	font-size: 40px;
+	float: right;
+	margin: 0;
+	padding: 10px 0 10px 20px;
+	height: auto;
+}
+#mic.active { color: white; }
+#mic.taxi { border-bottom-left-radius: 0px; }
+#taxiETA, #taxiDestinationETA {
+	border: none;
+	border-radius: 0;
+	padding: 10px;
+	width: 300px;
+}
+#taxiETA { border-bottom-left-radius: 20px; }
+#taxiDestinationETA { border-bottom-right-radius: 20px; }
+
+#taxiIncrementButtonContainer {
+	display: inline;
+}
+.taxiIncrementButton {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 8px;
+	width: 50px;
+	height: 62px;
+}
+#taxiDec { border-bottom-left-radius: 20px; }
+#taxiInc { border-bottom-right-radius: 20px; }
+#taxiNumberLabel {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	font-family: bangers, sans-serif;
+	margin: 0;
+	padding: 20 8px;
+	text-shadow: none;
+	top: 0;
+	min-width: 50px;
+	height: 62px;
+}

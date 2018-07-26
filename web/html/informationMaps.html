@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Paradizia</title>
+	<meta charset='utf-8' />
+	<!--Links the css files-->
+	<base href='..'>
+	<link rel='stylesheet' type='text/css' href='css/plugins/bootstrap.min.css'>
+	<link rel='stylesheet' type='text/css' href='css/plugins/font-awesome.min.css'>
+	<link rel='stylesheet' type='text/css' href='css/global.css'>
+	<link rel='stylesheet' type='text/css' href='css/table.css'>
+	<link rel='stylesheet' type='text/css' href='css/navbar.css'>
+	<link rel='stylesheet' type='text/css' href='css/confirmationOverlay.css'>
+	<link rel='stylesheet' type='text/css' href='css/informationMaps.css'>
+</head>
+<body>
+	<nav id='menubar'></nav><!--Adds the system-global vertical lateral menu bar-->
+	<main>
+		<iframe id='iframeMap'></iframe>
+		<div id='mapsMainButtonContainer'>
+			<section>
+				<button class='buttonDanger' id='mapsCloseShare'>Close Share</button>
+				<button class='mapsMainButton buttonWhite' id='share'>Share</button>
+				<button class='mapsMainButton buttonWhite' id='interests'>Points of Interest</button>
+				<button class='mapsMainButton buttonWhite' id='directions'>Get Directions</button>
+			</section>
+
+			<section>
+				<div id='shareButtonContainer'>
+					<button class='shareButton buttonWhite'>User 1</button>
+					<button class='shareButton buttonWhite'>User 2</button>
+					<button class='shareButton buttonWhite'>User 3</button>
+					<button class='buttonReward' id='shareConfirm'>Share</button>
+				</div>
+
+				<div id='interestsButtonContainer'>
+					<button class='interestsButton buttonWhite' id='bars'>Bars</button>
+					<button class='interestsButton buttonWhite' id='landscapes'>Landscapes</button>
+					<button class='interestsButton buttonWhite' id='mall'>Mall</button>
+					<button class='interestsButton buttonWhite' id='monuments'>Monuments</button>
+					<button class='interestsButton buttonWhite' id='museums'>Museums</button>
+				</div>
+
+				<div id='directionsButtonContainer'>
+					<div class='col-md-6' id='transportation'>
+						<button class='directionsButton buttonWhite' id='WALKING'>On foot</button>
+						<button class='directionsButton buttonWhite' id='DRIVING'>Car</button>
+						<button class='directionsButton buttonWhite' id='TRANSIT'>Public Transport</button>
+						<button class='directionsButton buttonWhite' id='DRIVING' data-toggle='tooltip' data-placement='right' title='Uberino'>Uber</button>
+						<button class='directionsButton buttonWhite' id='DRIVING' data-toggle='tooltip' data-placement='right' title='Cabbie'>Taxi</button>
+					</div>
+					<div class='col-md-6' id='directionInput'>
+						<button class='col-md-3 buttonReward' id='go'>GO!</button>
+						<input class='col-md-8' id='mapsDestinationInput' type='text' placeholder='Speak'>
+						<i class='col-md-1 fa fa-microphone' id='mic'></i>
+						<div id='taxiTime'>
+							<button class='buttonNeutral' id='taxiETA'>ETA: 14min</button>
+							<button class='buttonNeutral' id='taxiDestinationETA'>Destination ETA: 23min</button>
+							<div id="taxiIncrementButtonContainer">
+								<button class='buttonWhite taxiIncrementButton'>-</button>
+								<label id='taxiNumberLabel'>1</label>
+								<button class='buttonWhite taxiIncrementButton'>+</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</main>
+<!-- SCRIPTS GO UNDER HERE -->
+<script src='scripts/jQuery/jquery-3.1.1.min.js'></script>
+<script src='scripts/jQuery/bootstrap.min.js'></script>
+<script src='scripts/jQuery/jquery-ui.min.js'></script>
+<script src='scripts/jQuery/jquery.navbar.js'></script>
+<script src='scripts/plugins/svg4everybody.min.js'></script>
+<script src='scripts/global.js'></script>
+<script src='scripts/confirmationOverlay.js'></script>
+<script src='scripts/informationMaps.js'></script>
+</body>
+</html>
